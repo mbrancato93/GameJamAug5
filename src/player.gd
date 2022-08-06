@@ -18,7 +18,6 @@ func get_input():
 	if Input.is_action_pressed( Globals.player.controls.jump ):
 		if self.is_on_floor():
 			self.velocity.y = -Globals.player.jump_inc
-			print( "on_floor" )
 	if Input.is_action_pressed( Globals.player.controls.slow_time ):
 		get_parent().send_messadge( "slow_time" )
 	if Input.is_action_pressed( Globals.player.controls.reverse_time ):
