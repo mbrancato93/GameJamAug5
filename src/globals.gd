@@ -2,25 +2,35 @@ extends Node2D
 
 class_name globals
 
-class member extends Node2D:
+class _character extends Node2D:
 	pass
 	
-class player extends member:
+class _player extends _character:
 	var face_moving: bool = true
 	var speed: float = 10.0
-	var jump_inc: float = 10.0
-	class controls:
-		var jump = "jjump"
-		var slow_time = "slow_time"
-		var reverse_time = "reverse_time"
+	var jump_inc: float = 100.0
+	var controls
+	class _controls:
+		var jump: String = "jump"
+		var slow_time: String = "slow_time"
+		var reverse_time: String = "reverse_time"
+		
+		func _init():
+			pass
 	
-class scene extends Node2D:
+	func _init():
+		controls = self._controls.new()
+
+var player : _player = _player.new()
+	
+class _scene extends Node2D:
+	var gravity: float = 5.0
+var scene : _scene = _scene.new()
+	
+class _time extends Node2D:
 	pass
 	
-class time extends Node2D:
-	pass
-	
-class scene_flow extends Node2D:
+class _scene_flow extends Node2D:
 	var scenes = []
 	var currentSceneIndex: int = 0
 	

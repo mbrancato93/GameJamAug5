@@ -20,10 +20,14 @@ func _post_physics_process():
 	
 func _physics_process(delta):
 	self._pre_physics_process()
-	var collision = move_and_collide(velocity * delta)
-	if collision:
-		velocity = velocity.slide(collision.normal)
+	
+	# apply gravity
+	self.velocity.y += Globals.scene.gravity
+	
+#	var collision = move_and_collide(velocity * delta)
+#	if collision:
+#		velocity = velocity.slide(collision.normal)
 
 	# using move_and_slide
-	velocity = move_and_slide(velocity)
+	velocity = move_and_slide(velocity, Vector2.UP)
 	self._post_physics_process()

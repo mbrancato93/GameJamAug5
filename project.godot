@@ -93,6 +93,7 @@ _global_script_class_icons={
 [application]
 
 config/name="GameJamAug5"
+run/main_scene="res://scenes/levelOne.tscn"
 config/icon="res://icon.png"
 
 [autoload]

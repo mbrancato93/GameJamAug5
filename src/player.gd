@@ -7,7 +7,7 @@ extends member
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	self.velocity = Globals.player.speed
+	self.velocity.x = Globals.player.speed
 	pass # Replace with function body.
 
 # overload _pre_physics_process
@@ -16,10 +16,11 @@ func _pre_physics_process():
 
 func get_input():
 	if Input.is_action_pressed( Globals.player.controls.jump ):
-		if not self.is_on_floor():
-			self.velocity.y += Globals.player.jump_inc
+		if self.is_on_floor():
+			self.velocity.y = -Globals.player.jump_inc
+			print( "on_floor" )
 	if Input.is_action_pressed( Globals.player.controls.slow_time ):
-		get_parent().send_message( "slow_time" )
+		get_parent().send_messadge( "slow_time" )
 	if Input.is_action_pressed( Globals.player.controls.reverse_time ):
 		get_parent().send_message( "reverse_time" )
 
