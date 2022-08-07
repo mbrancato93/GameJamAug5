@@ -15,7 +15,7 @@ func _process(delta):
 func _pre_physics_process():
 	pass
 	
-func _post_physics_process():
+func _post_physics_process( collisions ):
 	pass
 	
 func _physics_process(delta):
@@ -30,4 +30,10 @@ func _physics_process(delta):
 
 	# using move_and_slide
 	velocity = move_and_slide(velocity, Vector2.UP)
-	self._post_physics_process()
+	
+	var collisions = []
+	for i in get_slide_count():
+		var collision = get_slide_collision(i)
+		collisions.append( collision )
+	
+	self._post_physics_process( collisions )

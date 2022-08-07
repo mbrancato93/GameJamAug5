@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Hills Layer 04.png-8007a7dbee884d66cf03b2773f0e6dd4.stex"
+path="res://.import/Player_Sprite_Sheet.png-ba8407efb0411c7a266f703569f3be94.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Free Pixel Art Hill/PNG/Hills Layer 04.png"
-dest_files=[ "res://.import/Hills Layer 04.png-8007a7dbee884d66cf03b2773f0e6dd4.stex" ]
+source_file="res://Sprites/Player_Sprite_Sheet.png"
+dest_files=[ "res://.import/Player_Sprite_Sheet.png-ba8407efb0411c7a266f703569f3be94.stex" ]
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=1
+flags/repeat=0
 flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Hills Layer 04.png-8007a7dbee884d66cf03b2773f0e6dd4.stex"
+path="res://.import/parallax-01.png-3021bfec03ac9985dd79883ca1491c21.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Free Pixel Art Hill/PNG/Hills Layer 04.png"
-dest_files=[ "res://.import/Hills Layer 04.png-8007a7dbee884d66cf03b2773f0e6dd4.stex" ]
+source_file="res://assets/parallax-01.png"
+dest_files=[ "res://.import/parallax-01.png-3021bfec03ac9985dd79883ca1491c21.stex" ]
 
 [params]
 
